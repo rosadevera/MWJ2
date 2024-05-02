@@ -20,25 +20,24 @@ a:hover {
   
 #tank {
     max-width: 85%;
+    height: 70vh;
     margin: auto;
 }
 
 .full {
-    width: 100vw;
-    height: 70vh;
     padding-top: 7rem;
     padding-bottom: 8rem;
 }
 
 #tank2 {
     background: deepskyblue;
-    background-image: url(../_asset/tank/bottom.png), url(../_asset/tank/top.png);
+    background-image: url(./media/bottom.png), url(./media/top.png);
     background-position: left bottom, left top;
     background-size: initial;
     background-repeat: repeat-x, repeat-x;
     image-rendering: pixelated;
     border: 4px solid grey;
-    height: 100%;
+    height: 70vh;
 }
 
 #horse {
