@@ -5,7 +5,6 @@ html {
 body {
     background: darkslategray;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 a {
@@ -197,5 +196,13 @@ header {
       top: 27%;
       left: 45%;
       width: 130px;
+    }
+
+    #tank {
+        height: 60vh;
+    }
+
+    #tank2 {
+        height: 60vh;
     }
 }
