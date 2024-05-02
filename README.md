@@ -1,2 +1,1 @@
-# MWJ2
- 
+# Redesign for meghanwallacejames.com
