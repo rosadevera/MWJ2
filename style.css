@@ -1,7 +1,7 @@
 html {
     color: rgb(183, 183, 183);
 }
-  
+
 body {
     overflow-x: hidden;
 }
@@ -14,8 +14,7 @@ a {
 a:hover {
     cursor: pointer;
 }
-  
-  
+
 #tank {
     max-width: 85%;
     height: 70vh;
@@ -42,22 +41,22 @@ a:hover {
     top: 55%;
     left: 60%;
 }
-  
+
 #fish1 {
     top: 55%;
     left: 15%;
 }
-  
+
 .fish {
     position: absolute;
     display: inline-block;
 }
-  
+
 #jelly1 {
     top: 40%;
     left: 40%;
 }
-  
+
 .nymph {
     position: absolute;
     display: inline-block;
@@ -77,21 +76,20 @@ a:hover {
     color: black;
 }
 
-
 @keyframes floatAnimation {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
     100% {
-      transform: translateY(-10px);
+        transform: translateY(-10px);
     }
-  }
-  
+}
+
 article {
     display: block;
     unicode-bidi: isolate;
 }
-  
+
 .phone {
     margin-right: -7.5px;
     /* border: solid 1px red; */
@@ -113,7 +111,7 @@ header {
     border-left: 1.5px solid rgb(183, 183, 183);
     border-right: 1.5px solid rgb(183, 183, 183);
 }
-  
+
 #logo::before, #logo::after {
     content: "\273B";
     font-size: 1.8rem;
@@ -176,7 +174,7 @@ header {
     padding: .4rem 2.5rem .4rem .6rem;
     background-color: darkslategray;
 }
-  
+
 #signup-link:after {
     content: " ➜";
     font-size: 1.2rem;
@@ -251,29 +249,28 @@ header {
     box-shadow: 0 0 300px rgba(0,0,0,1) inset;
     z-index: 999; 
     pointer-events: none; /* Allow clicks and interactions through the overlay */
-  }
-  
+}
+
 @media only screen and (max-width: 768px) {
-  
     #horse {
-      top: 55%;
-      left: 60%;
+        top: 55%;
+        left: 60%;
     }
-    
+
     #fish1 {
-      top: 55%;
-      left: 12%;
+        top: 55%;
+        left: 12%;
     }
-    
+
     #jelly1 {
-      top: 40%;
-      left: 30%;
+        top: 40%;
+        left: 30%;
     }
-    
+
     .nymph {
-      top: 20%;
-      left: 50%;
-      width: 150px;
+        top: 20%;
+        left: 50%;
+        width: 150px;
     }
 
     #tank {
@@ -282,5 +279,15 @@ header {
 
     #tank2 {
         height: 60vh;
+    }
+
+    /* Mobile Fix for mix-blend-mode */
+    .bomb, .bomb2, .bomb3 {
+        mix-blend-mode: normal; /* Use a fallback blend mode */
+    }
+  
+    /* Will-change property for better performance on mobile */
+    .bomb, .bomb2, .bomb3 {
+        will-change: mix-blend-mode;
     }
 }
