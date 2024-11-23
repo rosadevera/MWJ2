@@ -1,5 +1,5 @@
 html {
-    color: ivory;
+    color: rgb(183, 183, 183);
 }
   
 body {
@@ -65,6 +65,7 @@ a:hover {
     left: 72%;
     animation: floatAnimation 3s infinite alternate ease-in-out;
     width: 180px;
+    z-index: 1000; /* Make sure it is layered above other elements */
 }
 
 .back {
@@ -109,8 +110,8 @@ header {
     font-family: 'Unna', serif;
     font-weight: 700;
     line-height: 1;
-    border-left: 1.5px solid ivory;
-    border-right: 1.5px solid ivory;
+    border-left: 1.5px solid rgb(183, 183, 183);
+    border-right: 1.5px solid rgb(183, 183, 183);
 }
   
 #logo::before, #logo::after {
@@ -198,6 +199,59 @@ header {
     font-style: normal;
     font-size: 3rem;
 }
+
+.bomb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998; 
+    background-color: black; 
+    mix-blend-mode: color; 
+    pointer-events: none; /* Allow clicks and interactions through the overlay */
+}
+
+.bomb2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; 
+    background-color: #d4908c; /* This color will blend with the image */
+    background-image: url('./media/SG-Dirt-Texture-03.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.7; /* Adjusts opacity for both the color and image */
+    mix-blend-mode: color-burn; /* This ensures the color blends with the background image */
+    pointer-events: none; /* Ensures interactions pass through this layer */
+}
+
+.bomb3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; 
+    background-color: #d4908c; /* This color will blend with the image */
+    opacity: 0.7; /* Adjusts opacity for both the color and image */
+    mix-blend-mode: color-burn; /* This ensures the color blends with the background image */
+    pointer-events: none; /* Ensures interactions pass through this layer */
+}
+
+.vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 300px rgba(0,0,0,1) inset;
+    z-index: 999; 
+    pointer-events: none; /* Allow clicks and interactions through the overlay */
+  }
   
 @media only screen and (max-width: 768px) {
   
